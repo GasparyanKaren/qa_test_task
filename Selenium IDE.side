@@ -1,0 +1,85 @@
+{
+  "id": "cd53a8bb-c01c-45db-afbc-dfd442117abc",
+  "version": "2.0",
+  "name": "Task",
+  "url": "https://qa.smclk.net",
+  "tests": [{
+    "id": "519c5159-7a04-4c90-8257-e28e4589fe6a",
+    "name": "Task",
+    "commands": [{
+      "id": "b9ac4e15-9965-4b1a-98ac-0a462b5e30db",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8663f4da-57fd-4898-9aa8-492e9df9858f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b37bca4-6be2-4834-abe0-789705a4aff9",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "karengasparyan@mail.ru"
+    }, {
+      "id": "261db215-3e8f-44ec-944d-fde51cea2867",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f6c85e7-2b3e-4c4f-8cc8-4a77739554d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "karen12345"
+    }, {
+      "id": "5320d3c5-10a7-4a36-b692-c74ba4b58e77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inline-flex",
+      "targets": [
+        ["css=.inline-flex", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bcb0dcda-5d32-4b41-8087-066a879b21cf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["519c5159-7a04-4c90-8257-e28e4589fe6a"]
+  }],
+  "urls": ["https://qa.smclk.net/"],
+  "plugins": []
+}
